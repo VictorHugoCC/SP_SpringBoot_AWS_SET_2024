@@ -1,0 +1,8 @@
+## Resolução de Conflito
+
+O conflito ocorreu no arquivo `Semana-03/README.md` ao tentar fazer o merge entre as branches `feature/semana-03` e `main`.
+
+- Na branch `main`, foi adicionada a descrição "Descrição diferente adicionada na branch `main`".
+- Na branch `feature/semana-03`, foi adicionada a descrição "Descrição inicial adicionada na branch `feature/semana-03`".
+
+Para resolver o conflito, mantivemos a descrição final: "Descrição final após resolver o conflito entre as branches `main` e `feature/semana-03`".
