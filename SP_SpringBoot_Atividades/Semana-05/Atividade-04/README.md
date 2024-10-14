@@ -75,3 +75,4 @@ Exemplo no MongoDB:
 - **repository:** Interface BookRepository para interagir com o MongoDB.
 - **service:** Classe BookService que encapsula a lógica de negócios.
 - **controller:** Controlador BookController que gerencia as requisições HTTP.
+- **comandosMongoDB.txt:** Arquivo Script com os comandos MongoDB Query Language
