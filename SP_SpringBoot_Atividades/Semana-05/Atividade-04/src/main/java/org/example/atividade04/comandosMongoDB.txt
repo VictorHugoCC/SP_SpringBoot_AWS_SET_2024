@@ -1,0 +1,19 @@
+// Insere livros na coleção
+db.books.insertMany([
+    { title: "1984", author: "George Orwell", publishedYear: 1949, genre: "Ficção Científica" },
+    { title: "Dom Casmurro", author: "Machado de Assis", publishedYear: 1899, genre: "Romance" },
+    { title: "The Lord of the Rings", author: "J.R.R. Tolkien", publishedYear: 1954, genre: "Fantasia" },
+    { title: "Animal Farm", author: "George Orwell", publishedYear: 1945, genre: "Fábula" }
+]);
+
+// Remove um livro específico
+db.books.deleteOne({ title: "Dom Casmurro" });
+
+// Atualiza o ano de publicação de um livro
+db.books.updateOne({ title: "1984" }, { $set: { publishedYear: 1950 } });
+
+// Consulta todos os livros de George Orwell
+db.books.find({ author: "George Orwell" });
+
+// Consulta livros publicados após 1950
+db.books.find({ publishedYear: { $gt: 1950 } });
