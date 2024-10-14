@@ -1,7 +1,8 @@
 package org.example.services;
 
-import org.example.entities.User;
-import org.example.repositories.UserRepository;
+
+import org.example.entities.Category;
+import org.example.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,16 +10,16 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class CategoryService {
     @Autowired
-    private UserRepository userRepository;
+    private CategoryRepository categoryRepository;
 
-    public List<User> findAll() {
-        return userRepository.findAll();
+    public List<Category> findAll() {
+        return categoryRepository.findAll();
     }
 
-    public User findById(Long id) {
-        Optional<User> user = userRepository.findById(id);
-        return user.get();
+    public Category findById(Long id) {
+        Optional<Category> category = categoryRepository.findById(id);
+        return category.get();
     }
 }
